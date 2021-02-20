@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root { /*---Setting up colour tags for use in styling in this css document --*/
+	--dark-color-a: #888ca5;
+	--dark-color-b: #57585c;
+	--light-color: #e6e9ff;
+	
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body { /*---Setting up the font type, size and margin for the body --*/
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: var(--light-color);
+	margin: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn { /*--- Styling the .btn class --*/
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	color: var(--dark-color-a);
+	border: 0;
+	font-size: 17px;
+}
+
+/* multichat.html css styling */
+
+.chat-container { /*--- Styling the .chat container class --*/
+	max-width: 1700px;
+	background: #fff;
+	margin: 40px auto;
+	overflow: hidden;
+}
+
+.chat-header { /*--- Styling for the .chat-header class --*/
+	background: var(--dark-color-a);
+	color: rgb(0, 0, 0);
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-footer { /*--- Styling for the .chat-header class --*/
+	background: var(--dark-color-a);
+	color: rgb(0, 0, 0);
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-main { /*--- Styling the .chat-main class --*/
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar { /*--- Styling the .chat-sidebar class --*/
+	background: var(--dark-color-b);
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+.chat-sidebar h2 { /*--- Styling the h2 element in the .chat-sidebar class --*/
+	font-size: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.chat-sidebar h3 { /*--- Styling the h3 element in the .chat-sidebar class --*/
+	margin-bottom: 15px;
+}
+
+.chat-sidebar ul li { /*--- Styling the ul/li element in the .chat-sidebar class --*/
+	padding: 10px 0;
+}
+
+.chat-messages { /*--- Styling for the .chat-messages class --*/
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+	
+}
+
+.chat-messages .message { /*--- Styling for the .message element inside the .chat-messages class --*/
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	overflow-wrap: break-word;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.chat-messages .message .meta { /*--- Styling for the .message .meta element inside the .chat-messages class --*/
+	font-size: 15px;
+	font-weight: bold;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span { /*--- Styling for the .message .meta span element inside the .chat-messages class --*/
+	color: #777;
+}
+
+.chat-form-container { /*--- Styling for the .chat-form-container class --*/
+	padding: 20px 30px;
+	background-color: var(--dark-color-a);
+}
+
+.chat-form-container form { /*--- Styling for the form element inside the .chat-form-container class --*/
+	display: flex;
+}
+
+.chat-form-container input[type='text'] { /*--- Styling for the input element inside the .chat-form-container class --*/
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	flex: 1;
+}
+
+/* mainpage.html css styling */
+
+.join-container { /*--- Styling the .join-container class --*/
+	max-width: 500px;
+	margin: 80px auto;
+	color: rgb(0, 0, 0);
+}
+
+.join-header { /*--- Styling the .join-header class --*/
+	text-align: center;
+	padding: 20px;
+	background: var(--dark-color-a);
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+}
+
+.join-footer { /*--- Styling the .join-footer class --*/
+	text-align: center;
+	padding: 20px;
+	background: var(--dark-color-a);
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+
+.join-footer h1 { /*--- Styling the .join-footer class --*/
+	color: rgb(0, 0, 0);
+}
+
+.join-main { /*--- Styling the .join-main class --*/
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+
+.join-main p { /*--- Styling the p element in the .join-main class --*/
+	margin-bottom: 20px;
+}
+
+.join-main .form-control { /*--- Styling the .form-control element in the .join-main class --*/
+	margin-bottom: 20px;
+}
+
+.join-main label { /*--- Styling the label element in the .join-main class --*/
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] { /*--- Styling the input element in the .join-main class --*/
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main select { /*--- Styling the select element in the .join-main class --*/
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn { /*--- Styling the .btn element in the .join-main class --*/
+	margin-top: 20px;
+	width: 100%;
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}

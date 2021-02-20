@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head> <!--- Start of Head Section -->
+
+	<meta charset="utf-8"> <!--- Setting character set -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--- Allowing for media queries in CSS -->
+
+	<meta name = "description" content= "COMPBET Providing a safe and secure place to bet."> <!--- Providing a description of the Webpage -->
+
+	<meta name = "keywords" content="COMPBET, betting, money, signup, account, withdraw, deposit, leaderboard, roulette, blackjack, poker, provably fair, "> <!--- Keywords that will improve SEO -->
+
+	<meta name = "author" content="Charles Palmer"> <!--- The author of the website -->
+
+	<title>COMPBET - Home</title> <!--- Webpage Title -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href= "/public/assets/style.css" rel="stylesheet" type="text/css"/>
+
+</head> <!--- End of Head Section  -->
+
+<body> <!--- Start of Body Section -->
+
+<!-- Navigation -->
+
+<nav class="navbar-expand-md navbar-light bg-light sticky-top"> <!--- Setting up Navbar attributes -->
+	
+	<div class="container-fluid">
+		
+		<a class="navbar-brand" href="/users/index"> <img src="/public/img/logo.png" alt="Dice Logo"> </a> <!--- Inserts Dice logo onto Navbar -->
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> <!--- Creates a togglable icon for Navbar dropdown -->
+			
+				<span class="navbar-toggler-icon"> 
+					
+
+				</span>
+
+		</button> <!--- End of togglable icon button -->
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			
+			<ul class="navbar-nav ml-auto"> <!--- Creating Navbar Items -->
+				
+				<li class="nav-item active">
+					<a class="nav-link" href="/users/index"> Home </a> <!--- Creating Home Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/about"> About </a> <!--- Creating About Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/services"> Services </a> <!--- Creating Services Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/games"> Games </a> <!--- Creating Games item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/contact"> Connect </a> <!--- Creating Connect Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/welcome"> Register/Login </a> <!--- Creating Connect Navbar item -->
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</nav>
+
+<!--- Jumbotron -->
+
+<div class="container-fluid"> 
+
+	
+
+		<div class="text-center"> <!--- Presetting grid sizes -->
+
+			<h1 class="mt-4">Dashboard</h1> 
+
+                <p class="lead mb-3">Welcome <%= name %></p> <!--- Welcome message using the name of the user that has just logged in to access the page -->
+
+                <a href="/public/mainpage.html" class="btn btn-primary">Livechat</a> <!--- Button allowing the user to log out of the webpage -->
+
+                <a href="/users/logout" class="btn btn-secondary">Logout</a> <!--- Button allowing the user to log out of the webpage -->
+
+		</div>
+
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2"> <!--- Presetting grid sizes -->
+
+		</div>
+
+	
+
+</div>
+
+<!--- Connect -->
+
+<div class="container-fluid padding">
+
+		<div class="row text-center padding">
+
+			<div class="col-12"> <!--- Creating a Div spanning 12 columns -->
+				
+				<h2> Connect </h2> <!--- Creating heading "Connect" -->
+
+			</div>
+
+			<div class="col-12 social padding">
+				
+				<a href="/users/contact"> <i class="fab fa-facebook"> </i> </a> <!--- Importing Facebook Icon -->
+
+				<a href="/users/contact"> <i class="fab fa-twitter"> </i> </a> <!--- Importing Twitter Icon -->
+
+				<a href="/users/contact"> <i class="fab fa-google-plus-g"> </i> </a> <!--- Importing Google Icon -->
+
+				<a href="/users/contact"> <i class="fab fa-instagram"> </i> </a> <!--- Importing Instagram Icon -->
+
+				<a href="/users/contact"> <i class="fab fa-youtube"> </i> </a> <!--- Importing Youtube Icon -->
+
+			</div>
+
+		</div>
+
+</div>
+
+<!--- Footer -->
+
+<footer>
+	
+	<div class="container-fluid padding">
+
+		<div class="row text-center">
+
+			<div class="col-md-4"> <!--- Creating a Div spanning 4 columns -->
+				
+				<img src="/public/img/footerlogo.png" alt="Dice Logo"> <!--- Importing Dice Logo -->
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<p> 01392 215656 </p>
+
+				<p> admin@compbet.co.uk </p>
+
+				<p> PO Box 26 </p>
+
+				<p> Exeter, Devon EX6 8XE </p>
+
+			</div>
+
+			<div class="col-md-4"> <!--- Creating a Div spanning 4 columns -->
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<h5> Our Live Chat Hours </h5>
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<p> Monday: 9am - 5pm </p>
+
+				<p> Saturday: 10am - 4pm </p>
+
+				<p> Sunday: Closed </p>
+
+			</div>
+
+			<div class="col-md-4"> <!--- Creating a Div spanning 4 columns -->
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<h5> Operating Area's </h5>
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<p> Europe </p>
+
+				<p> Asia </p>
+
+				<p> North America </p>
+
+				<p> South America </p>
+
+			</div>
+
+			<div class="col-12">
+
+				<hr class="light-100">
+
+				<h5> &copy; CPDevelopment 2020-2021 </h5>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</footer>
+
+
+</body> <!--- End of Body section -->
+
+</html> <!--- End of HTML section -->

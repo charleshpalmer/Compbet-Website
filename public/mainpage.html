@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head> <!--- Start of Head Section -->
+
+		<meta charset="UTF-8" /> <!--- Setting character set -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--- Allowing for media queries in CSS -->
+
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>
+
+		<link rel="stylesheet" href="css/chat.css" />
+
+		<meta name = "description" content= "COMPBET Providing a safe and secure place to bet."> <!--- Providing a description of the Webpage -->
+
+		<meta name = "keywords" content="COMPBET, betting, money, signup, account, withdraw, deposit, leaderboard, roulette, blackjack, poker, provably fair, "> <!--- Keywords that will improve SEO -->
+
+		<meta name = "author" content="Charles Palmer"> <!--- The author of the website -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link href= "/public/assets/style.css" rel="stylesheet" type="text/css"/>
+
+		<title>COMPBET Livechat</title> <!--- Webpage Title -->
+
+	</head> <!--- End of Head Section  -->
+
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar-expand-md navbar-light bg-light sticky-top"> <!--- Setting up Navbar attributes -->
+	
+	<div class="container-fluid">
+		
+		<a class="navbar-brand" href="/users/index"> <img src="/public/img/logo.png" alt="Dice Logo"> </a> <!--- Inserts Dice logo onto Navbar -->
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> <!--- Creates a togglable icon for Navbar dropdown -->
+			
+				<span class="navbar-toggler-icon"> 
+					
+
+				</span>
+
+		</button> <!--- End of togglable icon button -->
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			
+			<ul class="navbar-nav ml-auto"> <!--- Creating Navbar Items -->
+				
+				<li class="nav-item active">
+					<a class="nav-link" href="/users/index"> Home </a> <!--- Creating Home Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/about"> About </a> <!--- Creating About Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/services"> Services </a> <!--- Creating Services Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/games"> Games </a> <!--- Creating Games item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/contact"> Connect </a> <!--- Creating Connect Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/welcome"> Register/Login </a> <!--- Creating Connect Navbar item -->
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</nav>
+
+<!--- Welcome Section -->
+
+<div class="container-fluid padding">
+
+	<div class="row welcome text-center">
+		
+		<div class="col-12"> <!--- Creating a div with a column size of 12 -->
+			
+			<h1 class="display-4"> How does Livechat work? </h1> <!--- Creating a heading -->
+
+		</div>
+
+		<hr> <!--- Creating a Horizontal Rule -->
+
+	</div>
+	
+</div>
+
+<!--- Three Column Section -->
+
+<div class="container-fluid padding">
+	
+	<div class="row text-center padding">
+
+		<div class="col-xs-12 col-sm-6 col-md-4"> <!--- Presetting grid sizes -->
+			
+			<h3>Pick A Name!</h3> <!--- Creating a heading -->
+
+			<p> Pick a name! This allows you to stay anonymous. </p>
+
+		</div>
+
+		<div class="col-xs-12 col-sm-6 col-md-4"> <!--- Presetting grid sizes -->
+			
+			<h3>Pick A Room!</h3> <!--- Creating a heading -->
+
+			<p> Pick a room based on your intrests from the list provided! </p>
+
+		</div>
+
+		<div class="col-sm-12 col-md-4"> <!--- Presetting grid sizes -->
+
+			<h3>Join and Start Chatting!</h3> <!--- Creating a heading -->
+
+			<p> Click join chat and start talking to other users! </p>
+
+		</div>
+
+	</div>
+
+</div>
+
+<!--- Start of username and room selection -->
+
+		<div class="join-container">
+
+			<header class="join-header">
+
+				<h1> COMPBET | Live Chat</h1> <!--- Creating a heading for the form  -->
+
+			</header>
+
+			<main class="join-main">
+
+				<form action="multichat.html">
+
+					<div class="form-control">
+
+						<label for="username">Username for Livechat!</label> <!--- Creating a label with text "Username"  -->
+
+						<input type="text" name="username" id="username" placeholder="Enter username..." required/> <!--- Creating a data entry point for user to fill out a name for use in Livechat.  -->
+
+					</div>
+
+					<div class="form-control">
+
+						<label for="room">Room for Livechat!</label> <!--- Creating a label with text "Room"  -->
+
+						<select name="room" id="room"> <!--- Creating a selector so the user can pick a room to join for Livechat  -->
+
+							<option value="Blackjack">Blackjack</option>
+							<option value="Roulette">Roulette</option>
+							<option value="Texas Hold'em">Texas Hold'em</option>
+							<option value="Staff">Staff</option>
+
+						</select>
+
+					</div>
+
+					<button type="submit" class="btn">Join the Livechat!</button> <!--- Button that submits form action and joins the Livechat room.  -->
+
+				</form>
+
+			</main>
+
+			<footer class="join-footer">
+
+				<h1> We Hope You Enjoy! </h1> <!--- Creating a heading for the form  -->
+
+			</footer>
+
+		</div>
+
+<!--- Connect -->
+
+<div class="container-fluid padding">
+
+		<div class="row text-center padding">
+
+			<div class="col-12"> <!--- Creating a Div spanning 12 columns -->
+				
+				<h2> Connect </h2> <!--- Creating heading "Connect" -->
+
+			</div>
+
+			<div class="col-12 social padding">
+				
+				<a href="/users/contact"> <i class="fab fa-facebook"> </i> </a> <!--- Importing Facebook Icon -->
+
+				<a href="/users/contact"> <i class="fab fa-twitter"> </i> </a> <!--- Importing Twitter Icon -->
+
+				<a href="/users/contact"> <i class="fab fa-google-plus-g"> </i> </a> <!--- Importing Google Icon -->
+
+				<a href="/users/contact"> <i class="fab fa-instagram"> </i> </a> <!--- Importing Instagram Icon -->
+
+				<a href="/users/contact"> <i class="fab fa-youtube"> </i> </a> <!--- Importing Youtube Icon -->
+
+			</div>
+
+		</div>
+
+</div>
+
+
+<!--- Footer -->
+
+<footer>
+	
+	<div class="container-fluid padding">
+
+		<div class="row text-center">
+
+			<div class="col-md-4"> <!--- Creating a Div spanning 4 columns -->
+				
+				<img src="/public/img/footerlogo.png" alt="Dice Logo"> <!--- Importing Dice Logo -->
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<p> 01392 215656 </p>
+
+				<p> admin@compbet.co.uk </p>
+
+				<p> PO Box 26 </p>
+
+				<p> Exeter, Devon EX6 8XE </p>
+
+			</div>
+
+			<div class="col-md-4"> <!--- Creating a Div spanning 4 columns -->
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<h5> Our Live Chat Hours </h5>
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<p> Monday: 9am - 5pm </p>
+
+				<p> Saturday: 10am - 4pm </p>
+
+				<p> Sunday: Closed </p>
+
+			</div>
+
+			<div class="col-md-4"> <!--- Creating a Div spanning 4 columns -->
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<h5> Operating Area's </h5>
+
+				<hr class="light"> <!--- Creating a Horizontal Rule -->
+
+				<p> Europe </p>
+
+				<p> Asia </p>
+
+				<p> North America </p>
+
+				<p> South America </p>
+
+			</div>
+
+			<div class="col-12">
+
+				<hr class="light-100">
+
+				<h5> &copy; CPDevelopment 2020-2021 </h5>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</footer>
+
+	</body>
+
+</html>

@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700'); 
+
+html, body {
+  
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.text-center {
+
+  text-align: center;
+
+}
+
+.navbar {
+
+  padding: .8rem; /*---Adding .8rem padding to the .navbar class --*/
+
+}
+
+.navbar-nav li {
+
+  padding-right: 20px; /*---Adding 20px padding to the .navbar-nav class --*/
+
+}
+
+.nav-link{
+
+  font-size: 1.1em !important; /*---Setting font size to 1.1em --*/
+
+}
+
+.carousel-inner img {
+
+  width: 100%; /*---Setting width to 100% --*/
+  height: 100%; /*---Setting height to 100% --*/
+
+}
+
+.carousel-caption {
+
+  position: absolute; /*---Fixing the position of .carousel-caption class --*/
+
+  top: 50%;
+  transform: translateY(-50%); /*---Translating the caption text -50% on y-axis --*/
+
+}
+
+.carousel-caption h1 {
+
+  font-size: 500%; /*---Setting font size to 500% --*/
+  text-transform: uppercase; /*---Changing text from lowercase to uppercase --*/
+  text-shadow: 1px 1px 15px #000; /*---Adding a black text shadow --*/
+
+}
+
+.carousel-caption h3 {
+
+  font-size: 200%; /*---Setting font size to 200% --*/
+  font-weight: 500; /*---Setting the font weight to 500 --*/
+  text-shadow: 1px 1px 10px #000; /*---Adding a black text shadow --*/
+  padding-bottom: 1rem; /*---Adding 1rem padding to the bottom of .carousel-caption h3 class --*/
+
+}
+
+.btn-primary{
+
+  background-color: #6648b1; /*---Setting background color of .btn-primary to #6648b1 --*/
+  border: 1px solid #6648b1; /*---Setting border color of .btn-primary to #6648b1 --*/
+
+}
+
+.btn-primary:hover {
+
+  background-color: #563d7c; /*---Setting background color of .btn-primary to #563d7c --*/
+  border: 1px solid #563d7c; /*---Setting background color of .btn-primary to #563d7c --*/
+
+}
+
+.jumbotron {
+
+  padding: 1rem; /*---Adding 1rem padding to the .jumbotron class --*/
+  border-radius: 0; /*--- Setting the border radius to 0 --*/
+
+}
+
+.padding {
+
+  padding-bottom: 2rem; /*---Adding 2rem bottom padding to the .padding class --*/
+
+}
+
+.welcome {
+
+  width: 75%; /*---Setting the width to 75% of the page --*/
+  margin: 0 auto; /*---Setting the margin to 0 auto --*/
+  padding-top: 2rem; /*---Adding 2rem top padding to the .welcome class --*/
+
+}
+
+.welcome hr {
+
+  border-top: 2px solid #b4b4b4;
+  width: 95%; /*---Setting the width to 95% of the page --*/
+  margin-top: 0.3rem; /*---Adding 0.3rem top margin to the .welcome hr class --*/
+  margin-bottom: 1rem; /*---Adding 1rem bottom margin to the .welcome hr class --*/
+
+}
+
+.fa-code {
+
+  color: #e54d26; /*---Setting color of .fa-code to #e54d26 --*/  
+
+}
+
+.fa-bold {
+
+  color: #563d7c; /*---Setting color of .fa-bold to #563d7c --*/  
+
+}
+
+.fa-css3 {
+
+  color: #2163af; /*---Setting color of .fa-css3 to #2163af --*/  
+
+}
+
+.fa-code, .fa-bold, .fa-css3 {
+
+  font-size: 4em; /*---Setting font size to 4em --*/
+  margin: 1rem; /*---Setting margin to 1rem --*/
+
+}
+
+.fun {
+
+  width: 100%; /*---Setting width to 100% of the page --*/
+  margin-bottom: 2rem; /*---Setting bottom margin to 2rem --*/
+
+}
+
+.gif {
+
+  max-width: 100%; /*---Setting max width to 100% --*/
+
+}
+
+.social a {
+
+  font-size: 4.5em; /*---Setting font size to 4.5em --*/
+  padding: 3rem; /*---Setting padding to 3rem --*/
+
+}
+
+.fa-facebook {
+
+  color: #3b5998; /*---Setting color of .fa-facebook to #3b5998 --*/ 
+
+}
+
+.fa-twitter {
+
+  color: #00acbd; /*---Setting color of .fa-twitter to #00acbd --*/ 
+
+}
+
+.fa-google-plus-g {
+
+  color: #dd4b39; /*---Setting color of .fa-google-plus-g to #dd4b39 --*/ 
+
+}
+
+.fa-instagram{
+
+  color: #517fa8; /*---Setting color of .fa-instagram to #517fa8 --*/ 
+
+}
+
+.fa-youtube{
+
+  color: #bb0000; /*---Setting color of .fa-youtube to #bb0000 --*/ 
+
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-google-plus-g:hover, .fa-instagram:hover, .fa-youtube:hover{
+
+  color: #d5d5d5; /*---Setting hover color of social icons to #d5d5d5 --*/ 
+
+}
+
+footer{
+
+  background-color: #3f3f3f;
+  color: #d5d5d5; /*---Setting color of footer to #d5d5d5 --*/ 
+  padding-top: 2rem; /*---Setting padding to 2rem --*/
+
+}
+
+hr.light {
+
+  border-top: 1px solid #d5d5d5; /*---Setting color of hr.light border a to #d5d5d5 --*/ 
+  width: 75%; /*---Setting width to 75% of the page --*/ 
+  margin-top: .8rem; /*---Setting top margin to .8rem --*/
+  margin-bottom: 1rem; /*---Setting bottom margin to 1rem --*/
+
+}
+
+footer a {
+
+  color: #d5d5d5; /*---Setting color of footer a to #d5d5d5 --*/ 
+
+}
+
+hr.light-100 {
+
+  border-top: 1px solid #d5d5d5; /*---Setting color of hr.light 100 border a to #d5d5d5 --*/ 
+  width: 100%; /*---Setting width to 100% of the page --*/
+  margin-top: .8rem; /*---Setting top margin to .8rem --*/
+  margin-bottom: 1rem; /*---Setting bottom margin to 1rem --*/
+
+}
+
+/*---Media Queries --*/
+
+@media (max-width: 1080px) {
+
+  .social a {
+
+    font-size: 4em; /*---Setting font size to 4em --*/ 
+    padding: 2rem; /*---Setting padding to 2rem --*/ 
+
+  }
+
+  }
+
+@media (max-width: 1080px) {
+
+.carousel-caption {
+
+  top: 45%;
+
+}
+
+.carousel-caption h1 {
+
+  font-size: 350%; /*---Setting font size to 350% --*/ 
+
+}
+
+.carousel-caption h3 {
+
+  font-size: 140%; /*---Setting font size to 140% --*/ 
+  font-weight: 300; /*---Setting font weight to 400 --*/ 
+  padding-bottom: .2rem; /*---Setting  bottom padding to .2rem --*/ 
+
+}
+
+.carousel-caption .btn {
+
+  font-size: 95%; /*---Setting font size to 95% --*/ 
+  padding: 8px 14px; /*---Setting padding to 8px x 14px --*/ 
+
+}
+
+.display-4 {
+
+  font-size: 200%; /*---Setting font size to 200% --*/ 
+
+}
+
+.social a {
+
+    font-size: 2.5em; /*---Setting font size to 2.5em --*/ 
+    padding: 1.2rem; /*---Setting padding to 1.2rem --*/ 
+
+  }
+
+}
+
+@media (max-width: px) {
+
+.carousel-caption {
+
+  top: 40%;
+
+}
+
+.carousel-caption h1 {
+
+  font-size: 250%; /*---Setting font size to 250% --*/ 
+
+}
+
+.carousel-caption h3 {
+
+  font-size: 110%; /*---Setting font size to 110% --*/ 
+
+}
+
+.carousel-caption .btn {
+
+  font-size: 90%; /*---Setting font size to 90% --*/ 
+  padding: 4px 8px; /*---Setting padding to 4px x 8px --*/ 
+
+}
+
+.carousel-indicators {
+
+  display: none; /*---Setting indicators to not display at certain screen size --*/ 
+
+}
+
+.display-4 {
+
+  font-size: 160%; /*---Setting font size to 160% --*/ 
+
+}
+
+.social a {
+
+    font-size: 2em; /*---Setting font size to 2em --*/ 
+    padding: .7rem; /*---Setting padding to .7rem --*/ 
+
+  }  
+
+}
+
+
+/*---Firefox Bug Fix --*/
+
+.carousel-item { /*---Used to fix Bootstrap bug on Firefox Browser --*/ 
+
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+
+}
+
+/*--- Fixed Background Image --*/
+
+figure {
+
+  position: relative;
+  width: 100%; /*---Setting width to 100% of the page --*/ 
+  height: 60%; /*---Setting height to 60% of the page --*/ 
+  margin: 0!important;
+
+}
+
+.fixed-wrap {
+
+  clip: rect(0, auto, auto, 0); /*---Setting up dimentions of rectangle --*/ 
+  position: absolute; /*---Setting position as absoloute --*/ 
+  top: 0; /*---Setting top to 0 --*/ 
+  left: 0; /*---Setting left to 0 --*/
+  width: 100%; /*---Setting width to 100% of the page --*/ 
+  height: 100%; /*---Setting height to 100% of the page --*/ 
+
+}
+
+#fixed {
+
+  background-image: url('/public/img/mac.png'); /*---Image import for fixed image --*/ 
+  position: fixed; /*---Image location fixed on screen --*/ 
+  display: block; /*---Creating block for image to be displayed in --*/ 
+  top: 0; /*---Setting top to 0 --*/
+  left: 0; /*---Setting left to 0 --*/
+  width: 100%; /*---Setting width to 100% of the page --*/ 
+  height: 100%; /*---Setting height to 100% of the page --*/ 
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+
+}
+
+/*--- Bootstrap Padding Fix --*/
+
+[class*="col-"] {
+
+    padding: 1rem; /*---Setting padding to 1rem --*/ 
+
+}
+
+/*
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+*/

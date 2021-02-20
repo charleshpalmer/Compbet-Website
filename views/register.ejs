@@ -1,0 +1,223 @@
+<!-- Script Links -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href= "/public/assets/style.css" rel="stylesheet" type="text/css"/>
+
+<!-- Navigation -->
+
+<nav class="navbar-expand-md navbar-light bg-light sticky-top"> <!--- Setting up Navbar attributes -->
+	
+	<div class="container-fluid">
+		
+		<a class="navbar-brand" href="/users/index"> <img src="/public/img/logo.png" alt="Dice Logo"> </a> <!--- Inserts Dice logo onto Navbar -->
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> <!--- Creates a togglable icon for Navbar dropdown -->
+			
+				<span class="navbar-toggler-icon"> 
+					
+
+				</span>
+
+		</button> <!--- End of togglable icon button -->
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			
+			<ul class="navbar-nav ml-auto"> <!--- Creating Navbar Items -->
+				
+				<li class="nav-item active">
+					<a class="nav-link" href="/users/index"> Home </a> <!--- Creating Home Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/about"> About </a> <!--- Creating About Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/services"> Services </a> <!--- Creating Services Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/games"> Games </a> <!--- Creating Games item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/contact"> Connect </a> <!--- Creating Connect Navbar item -->
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="/users/welcome"> Register/Login </a> <!--- Creating Connect Navbar item -->
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</nav>
+
+<!-- Start of Registration Form -->
+
+<div class="row mt-5">
+
+    <div class="col-md-6 m-auto">
+
+      <div class="card card-body">
+
+        <h1 class="text-center mb-3"> <i class="fas fa-user-plus"></i> Register </h1> <!-- Header For the Form -->
+
+        <%- include('errormessages/errormsg'); %> <!-- Include link to messages.js file to handle error prompts -->
+        
+        <form action="/users/register" method="POST"> <!-- Create form with an action that redirects the user to the register page -->
+
+          <div class="form-group">
+
+            <label for="name">Name (please use first/last name)</label> <!-- Heading label for form -->
+
+            <input type="name" id="name" name="name" class="form-control" placeholder="Please Enter Your Name" value="<%= typeof name != 'undefined' ? name : '' %>"/> <!-- Textbox form item for "Name" -->
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="email">Email (w/ @ and .com prefix)</label> <!-- Heading label for form -->
+
+            <input type="email" id="email" name="email" class="form-control" placeholder="Please Enter Your Email" value="<%= typeof email != 'undefined' ? email : '' %>"/> <!-- Textbox form item for "Email" -->
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="password">Password (must be eight characters or longer)</label> <!-- Heading label for form -->
+
+            <input type="password" id="password" name="password" class="form-control" placeholder="Please Enter Your Password" value="<%= typeof password != 'undefined' ? password : '' %>"/> <!-- Textbox form item for "Password" -->
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="confirmpassword">Confirm Password (must match first password)</label> <!-- Heading label for form -->
+
+            <input type="password" id="confirmpassword" name="confirmpassword" class="form-control" placeholder="Confirm Your Password" value="<%= typeof confirmpassword != 'undefined' ? confirmpassword : '' %>"/> <!-- Textbox form item for "Confirm Password" -->
+
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Register For An Account!</button> <!-- Button with text "Register" that triggers form action -->
+
+          <a href="/users/welcome" class="btn btn-secondary btn-block">Go Back</a> <!-- Button with text "Go Back" that will redirect the user to welcome.ejs"-->
+
+        </form>
+
+        <p class="lead mt-4">Already Have A User Account? <a href="/users/login">Login Here!</a></p> <!-- Button with text "Login" that will redirect the user to login.ejs"-->
+
+      </div>
+
+    </div>
+
+  </div>
+
+<!--- Connect -->
+
+<div class="container-fluid padding">
+
+  <div class="row text-center padding">
+
+    <div class="col-12"> <!--- Creating a Div spanning 12 columns -->
+      
+      <h2> Connect </h2> <!--- Creating heading "Connect" -->
+
+    </div>
+
+    <div class="col-12 social padding">
+      
+      <a href="/users/contact"> <i class="fab fa-facebook"> </i> </a> <!--- Importing Facebook Icon -->
+
+      <a href="/users/contact"> <i class="fab fa-twitter"> </i> </a> <!--- Importing Twitter Icon -->
+
+      <a href="/users/contact"> <i class="fab fa-google-plus-g"> </i> </a> <!--- Importing Google Icon -->
+
+      <a href="/users/contact"> <i class="fab fa-instagram"> </i> </a> <!--- Importing Instagram Icon -->
+
+      <a href="/users/contact"> <i class="fab fa-youtube"> </i> </a> <!--- Importing Youtube Icon -->
+
+    </div>
+
+  </div>
+
+</div>
+
+<!--- Footer -->
+
+<footer>
+
+<div class="container-fluid padding">
+
+  <div class="row text-center">
+
+    <div class="col-md-4"> <!--- Creating a Div spanning 4 columns -->
+      
+      <img src="/public/img/footerlogo.png" alt="Dice Logo"> <!--- Importing Dice Logo -->
+
+      <hr class="light"> <!--- Creating a Horizontal Rule -->
+
+      <p> 01392 215656 </p>
+
+      <p> admin@compbet.co.uk </p>
+
+      <p> PO Box 26 </p>
+
+      <p> Exeter, Devon EX6 8XE </p>
+
+    </div>
+
+    <div class="col-md-4"> <!--- Creating a Div spanning 4 columns -->
+
+      <hr class="light"> <!--- Creating a Horizontal Rule -->
+
+      <h5> Our Live Chat Hours </h5>
+
+      <hr class="light"> <!--- Creating a Horizontal Rule -->
+
+      <p> Monday: 9am - 5pm </p>
+
+      <p> Saturday: 10am - 4pm </p>
+
+      <p> Sunday: Closed </p>
+
+    </div>
+
+    <div class="col-md-4"> <!--- Creating a Div spanning 4 columns -->
+
+      <hr class="light"> <!--- Creating a Horizontal Rule -->
+
+      <h5> Operating Area's </h5>
+
+      <hr class="light"> <!--- Creating a Horizontal Rule -->
+
+      <p> Europe </p>
+
+      <p> Asia </p>
+
+      <p> North America </p>
+
+      <p> South America </p>
+
+    </div>
+
+    <div class="col-12">
+
+      <hr class="light-100">
+
+      <h5> &copy; CPDevelopment 2020-2021 </h5>
+
+    </div>
+
+  </div>
+
+</div>
+
+</footer>
