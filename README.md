@@ -1,5 +1,0 @@
-# compbet-website
-
-Website
-
-
