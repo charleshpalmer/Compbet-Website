@@ -14,6 +14,10 @@ MongoDB Atlas
 
 The website provides resources to Gambling Enthusiasts, allowing them to register an account (with auth using passport.js), log in, and then have access to an interactive livechat service with four individual rooms and an admin bot. 
 
-# Run NPM I to install all neccesary modules.
+# NPM I
 
-# Type NPM run dev into the terminal to start hosting the app on localhost:5000.
+Execute this command in the terminal to install all necessary node modules.
+
+# NPM Run Dev
+
+Execute this command to begin hosing the application on the https://localhost:5000 route.
