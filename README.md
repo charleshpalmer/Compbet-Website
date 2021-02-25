@@ -1,4 +1,4 @@
-# compbet-website
+# Compbet-Website
 
 This project was made using a selection of technologies, for example: 
 
