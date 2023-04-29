@@ -1,23 +1,17 @@
 # Compbet-Website
 
-This project was made using a selection of technologies, for example: 
-
-HTML
-CSS
-JavaScript
-Bootstrap
-Node.js
-NPM
-Socket.io
-Express.js
-MongoDB Atlas
-
 The website provides resources to Gambling Enthusiasts, allowing them to register an account (with auth using passport.js), log in, and then have access to an interactive livechat service with four individual rooms and an admin bot. 
 
-# NPM I
+Installation
+To install and run this website, simply clone this repository to your local machine:
 
-Execute this command in the terminal to install all necessary node modules.
+bash
+Copy code
+git clone https://github.com/username/repo.git
+Next, open the index.html file in your web browser to start using the website.
 
-# NPM Run Dev
+Usage
+Once the website is loaded, users can register for an account, log in, and start betting on various sports events such as football, basketball, and tennis. Users can also view live scores and results to stay up-to-date on the latest sports events.
 
-Execute this command to begin hosing the application on the https://localhost:5000 route.
+Contributing
+If you would like to contribute to this project, please feel free to submit a pull request.
