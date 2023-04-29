@@ -5,9 +5,8 @@ The website provides resources to Gambling Enthusiasts, allowing them to registe
 Installation
 To install and run this website, simply clone this repository to your local machine:
 
-bash
-Copy code
-git clone https://github.com/username/repo.git
+``` git clone https://github.com/username/repo.git ```
+
 Next, open the index.html file in your web browser to start using the website.
 
 Usage
